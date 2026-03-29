@@ -196,8 +196,124 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 170px;
+  }
+
+  .header-container > div:first-child {
+    display: contents;
+  }
+
+  .header-title {
+    order: 0;
+  }
+
+  .header-subtitle {
+    order: 1;
+
+    font-size: 200px;
+  }
+
+  .header-description {
+    order: 2;
+  }
+
+  .header-img {
+    order: 3;
+    width: 100%;
+    max-width: 408px;
+    margin: 32px auto;
+  }
+
+  .buy-price-wrapper {
+    order: 4;
+  }
+
   .img-mor705 {
     width: 100%;
-    margin-left: 0px;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-container {
+    padding: 60px;
+  }
+
+  .header-subtitle {
+    font-size: 150px;
+  }
+
+  .header-description {
+    font-size: 25px;
+  }
+
+  .buy-price-wrapper {
+    width: 255px;
+    height: 68px;
+  }
+
+  .wrapper-img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-container {
+    padding: 20px;
+  }
+
+  .header-subtitle {
+    font-size: 80px;
+  }
+
+  .header-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .item-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .wrapper-item,
+  .product-description-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .wrapper-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .wrapper-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .buy-price-wrapper {
+    /* flex-wrap: wrap; */
+    flex-direction: column-reverse;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .buy-link,
+  .price {
+    width: 100%;
+    min-width: 0;
   }
 }
